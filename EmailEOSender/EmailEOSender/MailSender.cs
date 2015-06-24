@@ -11,11 +11,11 @@ namespace EmailEOSender
     class MailSender
     {      
 
-        public void SendEmployOffer(string emailFrom, string pwd, string emailTo, string subjet, string body)
+        public void SendEmployOffer(string emailFrom, string pwd, string emailTo, string subjet, string body, string smtp)
         {
             SmtpClient client = new SmtpClient();
             client.Port = 25;
-            client.Host = "smtp.gmail.com";
+            client.Host = smtp;
             client.EnableSsl = true;
             client.Timeout = 10000;
             client.DeliveryMethod = SmtpDeliveryMethod.Network;
