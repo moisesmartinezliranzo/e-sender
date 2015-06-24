@@ -1,0 +1,9 @@
+C:\Users\mmartinez\Documents\Visual Studio 2013\Projects\e-sender\EmailEOSender\EmailEOSender\bin\Debug\EmailEOSender.exe.config
+C:\Users\mmartinez\Documents\Visual Studio 2013\Projects\e-sender\EmailEOSender\EmailEOSender\bin\Debug\EmailEOSender.exe
+C:\Users\mmartinez\Documents\Visual Studio 2013\Projects\e-sender\EmailEOSender\EmailEOSender\bin\Debug\EmailEOSender.pdb
+C:\Users\mmartinez\Documents\Visual Studio 2013\Projects\e-sender\EmailEOSender\EmailEOSender\obj\Debug\EmailEOSender.csprojResolveAssemblyReference.cache
+C:\Users\mmartinez\Documents\Visual Studio 2013\Projects\e-sender\EmailEOSender\EmailEOSender\obj\Debug\EmailEOSender.Form1.resources
+C:\Users\mmartinez\Documents\Visual Studio 2013\Projects\e-sender\EmailEOSender\EmailEOSender\obj\Debug\EmailEOSender.Properties.Resources.resources
+C:\Users\mmartinez\Documents\Visual Studio 2013\Projects\e-sender\EmailEOSender\EmailEOSender\obj\Debug\EmailEOSender.csproj.GenerateResource.Cache
+C:\Users\mmartinez\Documents\Visual Studio 2013\Projects\e-sender\EmailEOSender\EmailEOSender\obj\Debug\EmailEOSender.exe
+C:\Users\mmartinez\Documents\Visual Studio 2013\Projects\e-sender\EmailEOSender\EmailEOSender\obj\Debug\EmailEOSender.pdb
