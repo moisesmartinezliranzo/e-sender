@@ -14,25 +14,21 @@ namespace EmailEOSender
         public void SendEmployOffer(string emailFrom, string pwd, string emailTo, string subjet, string body)
         {
             SmtpClient client = new SmtpClient();
-            client.Port = 25;
+
             client.Host = "smtp.gmail.com";
+            client.Port = 25;            
             client.EnableSsl = true;
             client.Timeout = 10000;
             client.DeliveryMethod = SmtpDeliveryMethod.Network;
             client.UseDefaultCredentials = true;
             client.Credentials = new System.Net.NetworkCredential(emailFrom, pwd);
 
-            MailMessage message = new MailMessage(emailFrom, emailTo, subjet , body);
-            
+            MailMessage message = new MailMessage(emailFrom, emailTo, subjet , body);            
 
             message.BodyEncoding = UTF8Encoding.UTF8;
             message.DeliveryNotificationOptions = DeliveryNotificationOptions.OnFailure;
 
-            try {
-                client.Send(message);
-            }catch(Exception e){
-                MessageBox.Show(e.ToString(), "Error");
-            }
+           client.Send(message);
             
         }
     }

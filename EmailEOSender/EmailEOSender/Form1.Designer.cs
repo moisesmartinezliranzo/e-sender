@@ -37,12 +37,14 @@
             this.txtSubjet = new System.Windows.Forms.TextBox();
             this.rtBody = new System.Windows.Forms.RichTextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.lblMensajesEnviados = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtFrom
             // 
             this.txtFrom.Location = new System.Drawing.Point(139, 11);
-            this.txtFrom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtFrom.Margin = new System.Windows.Forms.Padding(4);
             this.txtFrom.Name = "txtFrom";
             this.txtFrom.Size = new System.Drawing.Size(277, 22);
             this.txtFrom.TabIndex = 0;
@@ -50,7 +52,7 @@
             // txtPwd
             // 
             this.txtPwd.Location = new System.Drawing.Point(139, 47);
-            this.txtPwd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPwd.Margin = new System.Windows.Forms.Padding(4);
             this.txtPwd.Name = "txtPwd";
             this.txtPwd.PasswordChar = '*';
             this.txtPwd.Size = new System.Drawing.Size(277, 22);
@@ -81,7 +83,7 @@
             // btnSend
             // 
             this.btnSend.Location = new System.Drawing.Point(139, 252);
-            this.btnSend.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSend.Margin = new System.Windows.Forms.Padding(4);
             this.btnSend.Name = "btnSend";
             this.btnSend.Size = new System.Drawing.Size(100, 28);
             this.btnSend.TabIndex = 4;
@@ -103,7 +105,7 @@
             // txtSubjet
             // 
             this.txtSubjet.Location = new System.Drawing.Point(139, 79);
-            this.txtSubjet.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSubjet.Margin = new System.Windows.Forms.Padding(4);
             this.txtSubjet.Name = "txtSubjet";
             this.txtSubjet.Size = new System.Drawing.Size(439, 22);
             this.txtSubjet.TabIndex = 6;
@@ -111,7 +113,7 @@
             // rtBody
             // 
             this.rtBody.Location = new System.Drawing.Point(139, 127);
-            this.rtBody.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rtBody.Margin = new System.Windows.Forms.Padding(4);
             this.rtBody.Name = "rtBody";
             this.rtBody.Size = new System.Drawing.Size(439, 117);
             this.rtBody.TabIndex = 7;
@@ -128,11 +130,30 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "Mensaje";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(452, 258);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(126, 16);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "Mensajes enviados";
+            // 
+            // lblMensajesEnviados
+            // 
+            this.lblMensajesEnviados.AutoSize = true;
+            this.lblMensajesEnviados.Location = new System.Drawing.Point(440, 258);
+            this.lblMensajesEnviados.Name = "lblMensajesEnviados";
+            this.lblMensajesEnviados.Size = new System.Drawing.Size(0, 16);
+            this.lblMensajesEnviados.TabIndex = 10;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(596, 291);
+            this.Controls.Add(this.lblMensajesEnviados);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.rtBody);
             this.Controls.Add(this.txtSubjet);
@@ -143,9 +164,10 @@
             this.Controls.Add(this.txtPwd);
             this.Controls.Add(this.txtFrom);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Envia Ofertas de empleo";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -162,6 +184,8 @@
         private System.Windows.Forms.TextBox txtSubjet;
         private System.Windows.Forms.RichTextBox rtBody;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblMensajesEnviados;
 
     }
 }
